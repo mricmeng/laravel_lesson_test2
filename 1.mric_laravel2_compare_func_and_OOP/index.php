@@ -4,9 +4,11 @@
 <?php
 function myMessage(){
     echo "Hello World <br>";
-    echo "I am Meng Chomraone <br>";
+    echo "I am Meng Chomraoen <br>";
 }
 myMessage();
+// Hello World
+// I am Meng Chomraoen
 
 ?>
 
@@ -27,8 +29,8 @@ class Book
     }
 }
 $book = new Book();
-$book->nameBook();
-$book->priceBook();
+$book->nameBook();    //The Art of Deal
+$book->priceBook();   //The price book is $100
 
 ?>
 
@@ -47,9 +49,9 @@ $book->priceBook();
 function familyName($fname){
     echo "My name is Meng $fname <br>";
 }
-familyName("Chomraoen");
-familyName("Jhon");
-familyName("Richard");
+familyName("Chomraoen");  //My name is Meng Chomraoen
+familyName("Jhon");       //My name is Meng Jhon
+familyName("Richard");    //My name is Meng Richard
 ?>
 <br>
 
@@ -80,8 +82,8 @@ class Mobile
 $Samsung = new Mobile ();
 $Samsung->setName ("Sumsang Note 9");
 $Samsung->setPrice ("$1200");
-$Samsung->getName();
-$Samsung->getPrice();
+$Samsung->getName(); //Sumsang Note 9
+$Samsung->getPrice(); //$1200
 
 ?>
 <br>
@@ -98,8 +100,8 @@ $Samsung->getPrice();
 function familName($fname,$year){
     echo "My name is Meng $fname .Born in $year <br>";
 }
-familName("Chomraone","1992");
-familName("Chanda", 1999);
+familName("Chomraone","2018");  //My name is Meng Chomraone .Born in 2018
+familName("Chan", 1999);        //My name is Meng Chan .Born in 1999
 
 ?>
 <br>
@@ -129,6 +131,11 @@ class Person
 $Obj_person = new Person();
 $Obj_person-> setData(1, "Mric Meng", 20, 15);
 $Obj_person->information_person();
+// ID:1
+// Name:Mric Meng
+// QTY:20
+// Pric:15
+
 
 ?>
 
@@ -144,8 +151,8 @@ function sum($x ,$y){
     $z =$x +$y;
     return $z;
 }
-echo "The sum : 4 + 5 = ".sum(4,5)."<br>";
-echo "The sum : 100 + 200 = ".sum(100,200)."<br>";
+echo "The sum : 4 + 5 = ".sum(4,5)."<br>";            //The sum : 4 + 5 = 9
+echo "The sum : 100 + 200 = ".sum(100,200)."<br>";    //The sum : 100 + 200 = 300
 
 ?>
 
@@ -167,5 +174,5 @@ class Calculator
 $calculator = new Calculator();
 
 //3.Call the method using the object
-echo "The sum : 4 + 5 = " . $calculator->sum(4,5)."<br>";
-echo "The sum : 100 + 200 = " . $calculator->sum(100, 200) . "<br>";
+echo "The sum : 4 + 5 = " . $calculator->sum(4,5)."<br>";             //The sum : 4 + 5 = 9
+echo "The sum : 100 + 200 = " . $calculator->sum(100, 200) . "<br>";  //The sum : 100 + 200 = 300
