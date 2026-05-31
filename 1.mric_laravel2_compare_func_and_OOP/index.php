@@ -107,7 +107,7 @@ familName("Chan", 1999);        //My name is Meng Chan .Born in 1999
 <br>
 <!-- OOP with Parameter -->
 <?php
-class Person 
+class Product 
 {
     public $id;
     public $name;
@@ -120,7 +120,7 @@ class Person
         $this->qty =$qty;
         $this->price =$price;
     }
-    function information_person()
+    function information_product()
     {
         echo "<br> ID:".$this->id;
         echo "<br> Name:".$this->name;
@@ -128,11 +128,11 @@ class Person
         echo "<br> Pric:".$this->price;
     }
 }
-$Obj_person = new Person();
-$Obj_person-> setData(1, "Mric Meng", 20, 15);
-$Obj_person->information_person();
+$Obj_person = new Product();
+$Obj_person-> setData(1, "Apple", 20, 15);
+$Obj_person->information_product();
 // ID:1
-// Name:Mric Meng
+// Name:Apple
 // QTY:20
 // Pric:15
 
