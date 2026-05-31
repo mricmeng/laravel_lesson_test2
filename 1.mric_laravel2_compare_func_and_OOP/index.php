@@ -159,6 +159,7 @@ echo "The sum : 100 + 200 = ".sum(100,200)."<br>";    //The sum : 100 + 200 = 30
 <br>
 <!-- OOP with Parameter -->
 <?php
+// Way 1
 //1.Define the class
 class Calculator 
 {
@@ -176,3 +177,4 @@ $calculator = new Calculator();
 //3.Call the method using the object
 echo "The sum : 4 + 5 = " . $calculator->sum(4,5)."<br>";             //The sum : 4 + 5 = 9
 echo "The sum : 100 + 200 = " . $calculator->sum(100, 200) . "<br>";  //The sum : 100 + 200 = 300
+?>
